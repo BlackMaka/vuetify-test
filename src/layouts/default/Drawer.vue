@@ -16,13 +16,13 @@
 </template>
 
 <script>
-import DefaultDrawerHeader from './DrawerHeader.vue';
-import DefaultList from './List.vue';
+//import DefaultDrawerHeader from './DrawerHeader.vue';
+//import DefaultList from './List.vue';
 export default {
-  name: 'Default Drawer',
+  name: 'DefaultDrawer',
   components: {
-    DefaultDrawerHeader,
-    DefaultList,
+    DefaultDrawerHeader : ()=>import(/* webpackChunkName : "default-drawer-hader" */'./DrawerHeader.vue'),
+    DefaultList : ()=>import(/* webpackChunkName : "default-list" */ './List.vue'),
   },
   data() {
     return {

@@ -11,7 +11,7 @@ import DefaultAppbar from './AppBar.vue';
 import DefaultDrawer from './Drawer.vue';
 import DefaultView from './View.vue';
 export default {
-  name: 'Default layout',
+  name: 'DefaultLayout',
   components: {
     DefaultAppbar,
     DefaultDrawer,
