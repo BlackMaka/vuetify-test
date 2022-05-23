@@ -54,41 +54,8 @@
 </template>
 
 <script>
-import { extend, ValidationObserver, ValidationProvider } from 'vee-validate';
-import { max, required, numeric, digits } from 'vee-validate/dist/rules';
-extend('required', {
-  ...required,
-  message: '{_field_}필드는 필수값 입니다.',
-});
-extend('numeric', {
-  ...numeric,
-  message: '{_field_}필드는 숫자여야 합니다.',
-});
-extend('digits', {
-  ...digits,
-  message: '{_field_}필드는 {length}자리여야 합니다.',
-});
-
-//extend('max', max);
-extend('max', {
-  ...max,
-  message: '{_field_}필드는 {length}를 초과할 수 없습니다.',
-});
-
-// extend('max', (value, params) => {
-//   const limit = params[0];
-//   console.log(params);
-//   if (value && value.length > limit) {
-//     return `해당필드는 ${limit}자를 초과할 수 없습니다.`;
-//   } else {
-//     return true;
-//   }
-// });
 export default {
-  components: {
-    ValidationObserver,
-    ValidationProvider,
-  },
+  components: {},
   data() {
     return {
       name: null,
