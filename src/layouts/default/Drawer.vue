@@ -19,7 +19,7 @@
 import DefaultDrawerHeader from './DrawerHeader.vue';
 import DefaultList from './List.vue';
 export default {
-  name: 'Default Drawer',
+  name: 'DefaultDrawer',
   components: {
     DefaultDrawerHeader,
     DefaultList,
