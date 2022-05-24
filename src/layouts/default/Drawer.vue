@@ -55,9 +55,21 @@ export default {
         { title: 'Color', icon: 'mdi-list-page', to: '/color' },
         { title: 'Display', icon: 'mdi-list-page', to: '/display' },
         { title: 'Table', icon: 'mdi-list-page', to: '/table' },
-        { title: 'Form', icon: 'mdi-list-page', to: '/form' },
+        // { title: 'Form', icon: 'mdi-list-page', to: '/form' },
         { title: 'Button', icon: 'mdi-list-page', to: '/button' },
         { title: 'Icon', icon: 'mdi-list-page', to: '/icon' },
+        {
+          title: 'Form',
+          icon: 'mdi-list-page',
+          items: [
+            {
+              title: 'ValidationForm',
+              icon: 'mdi-list-page',
+              to: '/form/validation-form',
+            },
+            { title: 'AppForm', icon: 'mdi-list-page', to: '/form/app-form' },
+          ],
+        },
       ],
       right: null,
     };

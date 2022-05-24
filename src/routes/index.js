@@ -77,11 +77,6 @@ const routes = [
         name: 'Icon',
         component: Icon,
       },
-      {
-        path: '/form',
-        name: 'Form',
-        component: Form,
-      },
     ],
   },
   {
@@ -108,6 +103,22 @@ const routes = [
         path: 'sign-up',
         name: 'SignUp',
         component: SignUp,
+      },
+    ],
+  },
+  {
+    path: '/form',
+    component: Form,
+    children: [
+      {
+        path: 'validation-form',
+        name: 'ValidationForm',
+        component: () => import('@/views/form/ValidationForm'),
+      },
+      {
+        path: 'app-form',
+        name: 'AppForm',
+        component: () => import('@/views/form/AppForm'),
       },
     ],
   },
